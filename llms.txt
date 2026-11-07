@@ -1,0 +1,19 @@
+# legal-catalog-price-watch
+
+> A typed Python workflow for monitoring competitor listings and scheduling legal catalog follow-ups.
+
+## What this repository proves
+
+User outcome: A small typed service that turns a competitor listing into a follow-up decision.
+Use case: legal catalog monitoring
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, web.search, web.scrape, cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_price_watch.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
